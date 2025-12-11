@@ -30,3 +30,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### not including data files anymore ###
+data/*.txt

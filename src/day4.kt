@@ -7,7 +7,7 @@ private fun part1(data: List<String>) {
         // check the adjacent characters
         line.forEachIndexed { pos, char ->
             if (char == '@') {
-                var sum = 0
+                var sum: Int
                 val aboveLine = data.getOrNull(lineNum - 1)
                 val left = line.getOrNull(pos - 1)
                 val right = line.getOrNull(pos + 1)
@@ -69,7 +69,7 @@ private fun part2(data: List<String>) {
 
                     if (sum < 4) {
                         output++
-                        found++;
+                        found++
                         line[pos] = 'x'
                     }
                 }

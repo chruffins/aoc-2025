@@ -1,7 +1,7 @@
 import java.io.File
 
 private fun part1(data: List<String>) {
-    var output: Long = 0
+    var output: Long
 
     val delimiter = data.indexOfFirst { it == "" }
     val ranges = data.take(delimiter).map {

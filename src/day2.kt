@@ -1,6 +1,4 @@
 import java.io.File
-import kotlin.io.*
-import kotlin.math.ceil
 
 private val datafn: String = "data/day2.txt"
 
@@ -9,7 +7,7 @@ private fun part1() {
     val ranges: List<String> = data.split(",")
 
     var counter: Long = 0
-    ranges.forEach { it ->
+    ranges.forEach {
         val (first, last) = it.split("-").map { s ->
             s.toLong()
         }
